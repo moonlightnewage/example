@@ -1,0 +1,328 @@
+/*GENERAL*/
+
+
+/*Fonts*/
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: RalewayRegular;
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+/*Clearfix*/
+
+.navigation::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*General tags*/
+
+body {
+    background: #fff;
+    font: 16px RalewayRegular, sans-serif;
+}
+a, a:hover, a:active {
+    text-decoration: none;
+}
+h1, h2, h3, button {
+    text-transform: uppercase;
+}
+button {
+    background: transparent;
+    display: block;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+
+#header {
+    background: url('../img/banner.jpg') no-repeat center top;
+}
+#header .logo {
+    margin: 10px 0;
+}
+#header .navigation li {
+    float: right;
+    padding: 20px;
+}
+#header .navigation a li {
+    font: 14px RalewayRegular, sans-serif;
+    color: #ccccce;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#header .navigation li:hover {
+    border-bottom: 1px solid #E94C4C;
+}
+#header .title {
+    font: 45px MontserratRegular, sans-serif;
+    color: #ccccce;
+    text-align: center;
+    -webkit-text-shadow: 3px 3px 7px #000;
+    -moz-text-shadow: 3px 3px 7px #000;
+    -o-text-shadow: 3px 3px 7px #000;
+    text-shadow: 3px 3px 7px #000;
+    margin-top: 200px;
+}
+#header .contact-btn {
+    font: 18px MontserratRegular, sans-serif;
+    color: #e3e3e4;
+    font-weight: 500;
+    width: 270px;
+    border: 2px solid #ccccce;
+    padding: 15px 45px;
+    margin: 140px auto;
+}
+#header .contact-btn:hover {
+    background: #ccccce;
+    color: #1a1a1a;
+}
+
+/*CONTENT*/
+
+
+/*About us*/
+
+.about {
+    padding: 100px 0;
+}
+.section-title {
+    font: 32px MontserratRegular, sans-serif;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 0 60px;
+}
+.services .section-title {
+    margin-bottom: 0;
+}
+.contacts .section-title {
+    margin-top: 60px;
+}
+.section-text {
+    padding: 0 50px;
+}
+.section-text h3 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    padding: 25px 0;
+    margin-top: 30px;
+}
+.section-text p {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.89;
+}
+
+/*Slider*/
+
+.slider-block {
+    background: #eff0f2;
+    width: 480px;
+    height: 410px;
+    margin-left: 5%;
+}
+.slider {
+    z-index: 9;
+    width: 390px;
+    height: 480px;
+    overflow: hidden;
+    margin: -30px 0 0 30px;
+    position: relative;
+}
+.slider ul, .slider li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.slider ul {
+    width: 9999px;
+}
+.slider ul li {
+    list-style-type: none;
+    float: left;
+    width: 390px;
+    height: 480px;
+}
+.slider .nav {
+    position: absolute;
+    left: 160px;
+    bottom: 12px;
+}
+.slider .nav span {
+    background: #ccc;
+    margin: 0 8px 0 0;
+    width: 9px;
+    height: 9px;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+.slider .nav span.on {
+    background: #E94C4C;
+}
+
+/*Slider end*/
+
+
+/*Services*/
+
+.services .icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 10px auto;
+    fill: #E94C4C;
+}
+.services .icon use:hover {
+    fill: #d4d4d4;
+}
+.col-item {
+    padding: 25px;
+}
+.col-title {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.col-text {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.89;
+    text-align: center;
+}
+
+/*Services END*/
+
+
+/*Contacts*/
+
+.contact-message {
+    padding: 10px 0;
+    font-size: 18px;
+}
+#contactForm input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    float: right;
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+}
+#contactForm textarea {
+    margin-top: 12px;
+    border: 1px solid #d4d4d4;
+}
+#contactForm img {
+    padding: 10px;
+    margin: 12px 0;
+    float: left;
+    border: 1px solid #d4d4d4;
+}
+#form-submit {
+    width: auto;
+    float: right;
+    padding: 15px;
+    margin: 5px 0;
+    background: #000;
+    border: 1px solid #d4d4d4;
+    color: #d4d4d4;
+    font-size: 13px;
+    font-weight: 600;
+}
+#form-submit:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+#msgSubmitted.reply {
+    font-size: 18px;
+    font-weight: 600;
+}
+#msgSubmitted.success {
+    color: #054B26;
+}
+#msgSubmitted.fail {
+    color: #941F2B;
+}
+
+/*Contacts END*/
+
+
+/*FOOTER*/
+
+#footer {
+    background: #000;
+    width: 100%;
+    margin-top: 60px;
+    overflow: hidden;
+}
+#footer .footer-title {
+    margin: 50px 0 20px 0;
+    text-align: center;
+    color: #d4d4d4;
+}
+#footer .social, .ft-navigation, .cr-text {
+    width: 40%;
+    margin: 0 auto;
+}
+#footer .social div {
+    display: inline-block;
+}
+#footer .social .icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    fill: #fff;
+}
+#footer .social .icon:hover {
+    fill: #E94C4C;
+}
+#footer .ft-navigation ul {
+    text-align: center;
+}
+#footer .ft-navigation li {
+    display: inline-block;
+    padding: 15px;
+    border-right: 1px solid #E94C4C;
+}
+#footer .ft-navigation li:first-child {
+    border-left: 1px solid #E94C4C;
+}
+#footer .ft-navigation li a {
+    font: 14px RalewayRegular, sans-serif;
+    color: #ccccce;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#footer .copyright {
+    margin-top: 30px;
+}
+#footer .ft-text, .cr-text {
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+#footer .ft-text {
+    color: #E94C4C;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+#footer .cr-text {
+    color: #fff;
+    font-size: 12px;
+}
+
+/*FOOTER END*/
